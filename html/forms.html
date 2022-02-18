@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Using Html forms</h1>
+    <form action="save.php">
+      <lable for="name">Name</lable>
+      <input
+        placeholder="Please enter your name"
+        type="text"
+        name="name"
+        id="name"
+      /><br />
+      <lable for="email">Email</lable>
+      <input type="text" name="email" id="email" /><br />
+      <lable for="password">Password</lable>
+      <input type="password" name="password" id="password" /><br />
+      <label for="address">Address</label>
+      <textarea readonly cols="80" rows="3">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, est ut libero natus
+ minus incidunt qui porro facere fugit. Delectus sed harum similique laudantium
+  vitae nobis in reprehenderit recusandae exercitationem!</textarea
+      >
+      <input type="submit" name="submit" value="Login" id="submit" /><br />
+      <label for="CS">CS</label
+      ><input type="checkbox" name="CS" value="computer science" id="CS" />
+      <label for="IT">IT</label
+      ><input
+        type="checkbox"
+        name="IT"
+        value="information technology"
+        id="IT"
+      />
+      <label for="SE">SE</label
+      ><input type="checkbox" name="SE" value="software engg" id="SE" />
+      <label for="IOT">IOT</label
+      ><input
+        checked
+        type="checkbox"
+        name="IOT"
+        value="internet of things"
+        id="IOT"
+      />
+      <br />
+      <br />
+      <br />
+      <label for="male">Male</label
+      ><input type="radio" name="gender" value="m" id="male" />
+      <label for="female">Female</label
+      ><input type="radio" name="gender" value="f" id="female" />
+      <label for="other">other</label>
+      <input type="radio" name="gender" value="other" id="other" /><br />
+      <select>
+        <option disabled selected>Select options...</option>
+        <optgroup
+          label="Technolgy"
+          class="optg"
+          style="
+            background-color: black;
+            color: blanchedalmond;
+            font-size: large;
+            font-style: italic;
+          "
+        >
+          <option>Computer scince</option>
+          <option>Infromation technology</option>
+          <option>Software engg</option>
+          <option>Internet of things</option>
+        </optgroup>
+        <optgroup
+          label="Arts"
+          class="optg"
+          style="
+            background-color: black;
+            color: blanchedalmond;
+            font-size: large;
+            font-style: italic;
+          "
+        >
+          <option>Urdu</option>
+          <option>Islamiat</option>
+          <option>Pak study</option>
+          <option>Pushto</option>
+        </optgroup>
+      </select>
+    </form>
+  </body>
+</html>

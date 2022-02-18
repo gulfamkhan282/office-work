@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .news {
+        background-color: darksalmon;
+        padding: 30px;
+      }
+      .container {
+        background-color: rgb(59, 59, 185);
+        display: flex;
+        justify-content: space-between;
+        font-size: larger;
+      }
+      .layout {
+        margin-left: auto;
+        background-color: goldenrod;
+        padding: 30px;
+      }
+      .container > div {
+        flex: 1;
+      }
+      .home {
+        padding: 30px;
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="container">
+      <div class="home">Home</div>
+      <div class="news">Search</div>
+      <div class="layout">Logout</div>
+    </nav>
+  </body>
+</html>

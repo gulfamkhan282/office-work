@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  margin: 10px auto;
+  border: 1px solid gray;
+  display: grid;
+  color: white;
+  grid-template-rows: 60px 100px 200px 60px;
+  grid-template-columns: repeat(3, 1fr) 100px;
+}
+.div1 {
+  background-color: green;
+  grid-column: 1/-1;
+}
+.div2 {
+  background-color: blue;
+}
+.div3 {
+  background-color: red;
+}
+.div4 {
+  background-color: orange;
+}

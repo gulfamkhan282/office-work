@@ -1,0 +1,16 @@
+.required:after {
+  content: " *";
+  color: red;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  margin-right: 300px;
+  /* width: 100%; */
+  /* right: 300px; */
+  /* top: 200px; */
+}
+table {
+  width: 100%;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent li {
+        background-color: lightseagreen;
+        color: mintcream;
+      }
+      .parent li ul li {
+        background-color: orange;
+      }
+      .parent li > ul > li > ul > li {
+        background-color: orchid;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="parent">
+      <li>I am first</li>
+      <li>I am second</li>
+      <li>I am third</li>
+      <li>I am forth</li>
+      <li>
+        I am fifth
+        <ul class="child">
+          <li>child1</li>
+          <li>
+            child2
+            <ul>
+              <li>child2.1</li>
+              <li>child2.2</li>
+              <li>child2.3</li>
+            </ul>
+          </li>
+          <li>child3</li>
+          <li>child4</li>
+          <li>child5</li>
+        </ul>
+      </li>
+      <li>I am sixth</li>
+      <li>I am seventh</li>
+      <li>I am eigth</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>forms and tables</title>
+  </head>
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <div class="mx-auto" style="width: 300px">
+      <form name="sample" id="form">
+        <div class="form-group">
+          <label for="s.no">SR.No</label>
+          <input
+            type="number"
+            class="form-control"
+            name="s.no"
+            id="s.no"
+            aria-describedby="helpId"
+            placeholder="Enter S.No"
+          />
+          <label class="required" for="Name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            id="name"
+            aria-describedby="helpId"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Father name</label>
+          <input
+            type="text"
+            class="form-control"
+            name="fname"
+            id="fname"
+            aria-describedby="helpId"
+            placeholder="Enter your father name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Roll no </label>
+          <input
+            type="number"
+            class="form-control"
+            name="roll-no"
+            id="roll-no"
+            aria-describedby="helpId"
+            placeholder="Enter your Roll no"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">City</label>
+          <input
+            type="text"
+            class="form-control"
+            name="city"
+            id="city"
+            aria-describedby="helpId"
+            placeholder="Enter your City name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Subject</label>
+          <input
+            type="text"
+            class="form-control"
+            name="subject"
+            id="subject"
+            aria-describedby="helpId"
+            placeholder="Enter subject name"
+          />
+        </div>
+        <div class="form-group">
+          <label class="required" for="">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            id="email"
+            aria-describedby="helpId"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Phone no</label>
+          <input
+            type="text"
+            class="form-control"
+            name="phone-no"
+            id="phone-no"
+            aria-describedby="helpId"
+            placeholder="Enter your phone no"
+          />
+        </div>
+        <button>submit</button>
+      </form>
+    </div>
+    <br />
+
+    <table class="show" id="show">
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Name</th>
+          <th>Father name</th>
+          <th>Roll no</th>
+          <th>City</th>
+          <th>Subject</th>
+          <th>Email</th>
+          <th>Phone no</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+      <div style="display: none">
+        <button type="button" onclick="myFunc()" value="button" id="delete">
+          Delete
+        </button>
+      </div>
+      <p><button onclick="mySort()">Sort</button></p>
+    </table>
+    <script>
+      const formEl = document.querySelector("form");
+      const tbodyEl = document.querySelector("tbody");
+      const tableEl = document.querySelector("table");
+
+      function onAddData(e) {
+        e.preventDefault();
+        const sno = document.getElementById("s.no").value;
+        const name = document.getElementById("name").value;
+        const fname = document.getElementById("fname").value;
+        const rollno = document.getElementById("roll-no").value;
+        const city = document.getElementById("city").value;
+        const subject = document.getElementById("subject").value;
+        const email = document.getElementById("email").value;
+        const phoneno = document.getElementById("phone-no").value;
+
+        tbodyEl.innerHTML += `
+        <tr>
+         <td>${sno}</td>
+         <td>${name}</td>
+         <td>${fname}</td>
+         <td>${rollno}</td>
+         <td>${city}</td>
+         <td>${subject}</td>
+         <td>${email}</td>
+         <td>${phoneno}</td>
+         <td> <button class="deleteBtn"> Delete </button> </td>
+
+          </tr>
+        `;
+        document.sample.reset();
+      }
+      function onDeleteRow(e) {
+        if (!e.target.classList.contains("deleteBtn")) {
+          return;
+        }
+        const btn = e.target;
+        btn.closest("tr").remove();
+      }
+
+      formEl.addEventListener("submit", onAddData);
+      tableEl.addEventListener("click", onDeleteRow);
+
+      function handleSubmit(event) {
+        event.preventDefault();
+
+        const data = new FormData(event.target);
+
+        const value = Object.formEntries(data.entries());
+
+        console.log({ value });
+      }
+      const form = document.querySelector("form");
+      form.addEventListener("submit", handleSubmit);
+
+      const arr = {};
+      arr.sort(function (a, b) {
+        if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
+        if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
+        return 0;
+        console.log(arr);
+      });
+    </script>
+  </body>
+</html>

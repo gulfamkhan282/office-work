@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>forms and tables</title>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <div class="mx-auto" style="width: 300px">
+      <form name="sample" id="form">
+        <div class="form-group">
+          <label for="s.no">SR.No</label>
+          <input
+            type="number"
+            class="form-control"
+            name="s.no"
+            id="s.no"
+            aria-describedby="helpId"
+            placeholder="Enter S.No"
+          />
+          <label class="required" for="Name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            id="name"
+            aria-describedby="helpId"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Father name</label>
+          <input
+            type="text"
+            class="form-control"
+            name="fname"
+            id="fname"
+            aria-describedby="helpId"
+            placeholder="Enter your father name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Roll no </label>
+          <input
+            type="number"
+            class="form-control"
+            name="roll-no"
+            id="roll-no"
+            aria-describedby="helpId"
+            placeholder="Enter your Roll no"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">City</label>
+          <input
+            type="text"
+            class="form-control"
+            name="city"
+            id="city"
+            aria-describedby="helpId"
+            placeholder="Enter your City name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Subject</label>
+          <input
+            type="text"
+            class="form-control"
+            name="subject"
+            id="subject"
+            aria-describedby="helpId"
+            placeholder="Enter subject name"
+          />
+        </div>
+        <div class="form-group">
+          <label class="required" for="">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            id="email"
+            aria-describedby="helpId"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Phone no</label>
+          <input
+            type="text"
+            class="form-control"
+            name="phone-no"
+            id="phone-no"
+            aria-describedby="helpId"
+            placeholder="Enter your phone no"
+          />
+        </div>
+        <input type="button" onclick="AddRow()" value="Add" id="button" />
+      </form>
+    </div>
+    <br />
+
+    <table class="show" id="show">
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Name</th>
+          <th>Father name</th>
+          <th>Roll no</th>
+          <th>City</th>
+          <th>Subject</th>
+          <th>Email</th>
+          <th>Phone no</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+      <div style="display: none">
+        <button type="button" onclick="myFunc()" value="button" id="delete">
+          Delete
+        </button>
+      </div>
+      <p><button onclick="mySort()">Sort</button></p>
+    </table>
+  </body>
+</html>

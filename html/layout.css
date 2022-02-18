@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+.header {
+  background-color: rosybrown;
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+}
+.column1 {
+  float: left;
+  width: 33%;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+.footer p {
+  text-align: center;
+  padding: 30px;
+  background-color: rgb(60, 153, 68);
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+}

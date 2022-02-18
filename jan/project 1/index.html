@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CACF</title>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+    <div id="logo1">
+      <div style="display: inline-block" class="logo">
+        <!-- <h1>CACF</h1> -->
+        <a href="#wer">
+          <img style="width: 26%; border-radius: 40px" src="images/logo.PNG"
+        /></a>
+      </div>
+      <div style="display: inline" class="nav">
+        <nav style="font-size: larger" class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#title">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="conatainer">
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              id="wer"
+              src="images/istockphoto-827896866-170667a.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/download.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/pexels-photo-69432.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div
+      style="display: flex; justify-content: space-between"
+      class="container"
+    >
+      <div id="title"><h2 style="padding: 30px">TEAM</h2></div>
+
+      <div class="card" style="width: 18rem">
+        <img src="images/pic.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">CEO</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Click</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="images/pic.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">ED</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Click</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="images/pic.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">IM</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Click</a>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: space-around" class="container">
+      <h2 style="padding: 80px" id="contact">CACF</h2>
+      <form style="padding: 16px" id="form">
+        <label style="padding: 11px" for="name">Name</label>
+        <input
+          type="text"
+          placeholder="Enter your Name"
+          name="name"
+          id="name"
+        />
+        <br />
+        <br />
+        <label style="padding: 11px 12px" for="email">Email</label>
+        <input
+          type="text"
+          placeholder="Enter your Email"
+          name="email"
+          id="email"
+        />
+        <button
+          style="display: block; padding: 3px; margin: 58px; border-radius: 5px"
+          type="button"
+          class="btn-dark"
+        >
+          Submit
+        </button>
+      </form>
+      <div style="padding: 96px; line-height: 51px" id="icon">
+        <i>
+          <!-- facebook -->
+          <a
+            style="color: #3b4998"
+            href="https://web.facebook.com/profile.php?id=100054237767279"
+            role="button"
+            ><i class="fab fa-facebook-f fa-lg"></i
+          ></a>
+          <br />
+          <!-- instagram -->
+          <a
+            style="color: #ac2bac"
+            href="https://www.instagram.com/itx_gulfii/"
+            role="button"
+            ><i class="fab fa-instagram fa-lg"></i></a
+          ><br />
+
+          <!-- Whatsapp -->
+          <a
+            class="btn btn-primary"
+            style="background-color: #25d366"
+            href="https://wa.me/+923329197282"
+            role="button"
+            ><i class="fab fa-whatsapp"></i></a
+          ><br />
+        </i>
+      </div>
+    </div>
+    <div style="background-color: rgb(188, 134, 211)" class="container">
+      <div id="about"><h2>About</h2></div>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsa
+          laudantium saepe illum labore praesentium, quam enim nostrum sequi?
+          Quidem voluptate quaerat minima. Distinctio debitis, voluptatem aut
+          adipisci maxime et.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsa
+          laudantium saepe illum labore praesentium, quam enim nostrum sequi?
+          Quidem voluptate quaerat minima. Distinctio debitis, voluptatem aut
+          adipisci maxime et.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsa
+          laudantium saepe illum labore praesentium, quam enim nostrum sequi?
+          Quidem voluptate quaerat minima. Distinctio debitis, voluptatem aut
+          adipisci maxime et.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsa
+          laudantium saepe illum labore praesentium, quam enim nostrum sequi?
+          Quidem voluptate quaerat minima. Distinctio debitis, voluptatem aut
+          adipisci maxime et.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsa
+          laudantium saepe illum labore praesentium, quam enim nostrum sequi?
+          Quidem voluptate quaerat minima. Distinctio debitis, voluptatem aut
+          adipisci maxime et.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsa
+          laudantium saepe illum labore praesentium, quam enim nostrum sequi?
+          Quidem voluptate quaerat minima. Distinctio debitis, voluptatem aut
+          adipisci maxime et.
+        </p>
+      </div>
+    </div>
+
+    <footer
+      style="
+        padding: 6px;
+        background-color: rgb(69, 142, 143);
+        text-align: center;
+      "
+    >
+      &copy; Copyright 2021 HTML.am
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+.header {
+  background-color: coral;
+  position: fixed;
+  width: 100%;
+  height: 142px;
+  display: flex;
+  justify-content: space-between;
+}
+html {
+  scroll-behavior: smooth;
+}
+#imm {
+  justify-content: space-between;
+}
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 161px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.slider {
+  overflow-x: hidden;
+}
+.slide {
+}
+#one {
+  width: 100%;
+}
+#two {
+  background-color: rgb(106, 106, 141);
+  padding: 30%;
+  padding-right: 100px;
+  margin-bottom: 29px;
+}
+#three {
+  background-color: rgb(99, 121, 120);
+  height: 240px;
+  padding: 30%;
+  padding-right: 100px;
+  margin-bottom: 2px;
+}
+.footer {
+  background-color: #a58080;
+  text-align: center;
+  padding: 20px;
+}
