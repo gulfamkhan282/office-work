@@ -1,0 +1,78 @@
+body {
+  font-family: sans-serif;
+}
+
+.announcement-bar {
+  background-color: rgb(255, 102, 0);
+  padding: 8px 55px;
+}
+.announcement-bar_message {
+  display: block;
+  font-size: 1.06667em;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  line-height: 1.5;
+}
+.lazyloaded {
+  height: 100px;
+  width: 164px;
+  display: flex;
+  margin: 0px 0px 0px -9px;
+}
+div.gridgrid--no-guttersgrid-tablesite-header__mobile-nav {
+  display: inline-flex;
+}
+nav.navbar.navbar-expand-lg.navbar-light {
+  padding: 10px;
+  left: 226px;
+  display: inline-grid;
+}
+.site-header__icons-wrapper {
+  position: absolute;
+  display: flex;
+  margin: 12px;
+}
+i.fafa-search {
+  padding: 12px;
+  margin-top: 12px;
+  margin: 12px;
+}
+i.fafa-shopping-cart {
+  margin: 12px;
+}
+div.para1 {
+  text-align: center;
+  font-size: x-large;
+}
+.button {
+  padding: 10px 18px;
+  border: 1px solid;
+  border-radius: 2px;
+  background-color: rgb(255, 102, 0);
+  display: inline-block;
+  transform: translate(10px, -165px);
+  margin-top: 27px;
+}
+img#img1 {
+  max-width: 545px;
+  margin: 110px;
+}
+.section {
+  background-color: darkcyan;
+}
+.geeks {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.geeks img {
+  width: 100%;
+  transition: 0.2s all ease-in-out;
+}
+
+.geeks:hover img {
+  transform: scale(1.5);
+}

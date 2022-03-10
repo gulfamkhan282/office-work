@@ -17,10 +17,20 @@ const arr = [5, 1, 3, 2, 6];
 //   return x.toString(2);
 // });
 
-const output = arr.map((x) => {
-  // 3rd way with an arrow function.
-  return x.toString(2);
-});
-console.log(output);
+// const output = arr.map((x) => {
+//   // 3rd way with an arrow function.
+//   return x.toString(2);
+// });
+// console.log(output);
 
-// Filter
+// Filter odd values
+
+// function isOdd(x) {
+//   return x % 2;
+// }
+// const output = arr.filter(isOdd);
+// console.log(output);
+
+// filter even values
+function isEven()
+const output= arr.filter(isEven);

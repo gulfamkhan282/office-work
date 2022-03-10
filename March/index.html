@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="mystyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <title>Finestones-All About Gemstone</title>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <div class="announcement-bar">
+      <p class="announcement-bar_message">Free Worldwide FedEx Shipping.</p>
+    </div>
+    <header class="site-header border-bottom logo-left" role="banner">
+      <div class="container-fluid flex-wrap">
+        <div class="row">
+          <div class="col-sm-2">
+            <a href="/" class="site-header__logo-image">
+              <img
+                class="lazyloaded"
+                src="images/pngtree-creative-company-logo-png-image_1197025.jpg"
+              />
+            </a>
+          </div>
+          <div class="col-sm-8">
+            <nav
+              class="navbar navbar-expand-lg navbar-light"
+              style="left: 117px"
+            >
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#"
+                      >Home <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdownMenuLink"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Products
+                    </a>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="navbarDropdownMenuLink"
+                    >
+                      <a class="dropdown-item" href="tourmaline.html"
+                        >Tourmaline</a
+                      >
+                      <a class="dropdown-item" href="aquamarine.html"
+                        >Aquamarine</a
+                      >
+                      <a class="dropdown-item" href="peridot.html">Peridot</a>
+                      <a class="dropdown-item" href="topaz.html">Topaz</a>
+                      <a class="dropdown-item" href="garnet.html">Garnet</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="solditems.html">Sold items</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="shipping.html"
+                      >Shiping & Returns</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="icons" style="margin: 19px">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <a href="cart.html">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <span class="countItem">0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div
+      class="container"
+      style="position: relative; text-align: center; color: rgb(224, 159, 159)"
+    >
+      <div class="row">
+        <div class="col-sm-12">
+          <img style="width: 100%; height: 50%" src="images/1.jpg" />
+          <div
+            class="centered"
+            style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -295%);
+            "
+          >
+            <h2 class="h1 mega-title" style="font-size: 4.33333em">
+              FINESTONES
+            </h2>
+          </div>
+          <div class="para1" style="transform: translate(-6px, -144px)">
+            <p>
+              Find the perfect stone,loose gemstones of all colors and shapes.
+            </p>
+          </div>
+          <div id="whatsapp">
+            <img
+              src="images/whatsapp_PNG95149.png"
+              style="width: 5%;transform: translate(592px, -89px);position: fixed;"
+            />
+          </div>
+          <h3 style="font-family: monospace" class="head">
+            FEATURED COLLECTION
+          </h3>
+          <div class="button">Click here</div>
+        </div>
+        <div class="col-sm-6">
+          <!-- Button trigger modal -->
+       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+         Launch demo modal
+       </button>
+       
+       <!-- Modal -->
+       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Modal title</h5></div>
+               <input type="text" placeholder="name" id="name"/>
+               <input type="number" placeholder="price" id="price"/>
+               <input type="file" id="image_input" accept="images/png, images/jpg"/>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+               </button>
+             </div>
+             <div class="modal-body">
+               ...
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary">Save changes</button>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-3">
+         <div id="display_image"></div>
+       </div>
+        <div class="col-sm-3">
+          <a href="addtocart1.html">
+              <div class="card" style="width: 18rem">
+                <img class="card-img-top" src="images/1.jpg" alt="Card image cap" />
+                <div class="card-body">
+                  <h5 class="card-title">Tourmaline</h5>
+                  <p class="card-text">
+
+
+                    Some quick example text to build on the card title and make up
+                    the bulk of the card's content.
+                  </p>
+                  <span><s>$800</s>$600</span>
+                  <button class="btn btn-primary addToCart">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            </a>
+        <div class="col-sm-3">
+          <a href="description.html">
+
+            <div class="card" style="width: 18rem">
+              <img
+              class="card-img-top"
+              src="images/dazzling-diamond-blue-gemstones-black-background-design-202227312.jpg"
+              alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Aquamarine</h5>
+                <p class="card-text">
+                  Flawless 4.50 CT Excellent Pear Shape Natural Orangish Pink
+                  Tourmaline from Afghanistan.
+                </p>
+                <span><s>$500</s>$450</span>
+                <button class="btn btn-primary addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class="col-sm-3">
+          <a href="decriprion2.html">
+
+            <div class="card" style="width: 18rem">
+              <img
+              class="card-img-top"
+              src="images/istockphoto-895900520-612x612.jpg"
+              alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Peridot</h5>
+                <p class="card-text">
+                  Flawless 10.52 CT Excellent Emerald Cut Natural Santa Maria Blue
+                Aquamarine from Brazil.
+              </p>
+              <span><s>$500</s>$400</span>
+              <button class="btn btn-primary addToCart">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </a>
+        <div class="col-sm-3">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="images/Photo-Credit-_-Roger-Dery-Gem-Design.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Topaz</h5>
+              <p class="card-text">
+                Flawless 9.68 CT Excellent Oval Cut Top Blue Tanzanite Gemstone
+                from Tanzania.
+              </p>
+              <span><s>$700</s>$460</span>
+              <button class="btn btn-primary addToCart">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="images/sapphire-transparent-background.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Garnet</h5>
+              <p class="card-text">
+                100% 👁 Clean 17.75 CT Excellent Emerald Cut Natural Santa Maria
+                Blue Aquamarine Gemstone from Brazil.
+              </p>
+              <span><s>$900</s>$500</span>
+              <button class="btn btn-primary addToCart">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="images/pngtree-shiny-diamonds-hd-poster-background-image_143755.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="images/sapphire-transparent-background.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Certified! 13.57 CT Excellent Emerald Cut Natural Blue & Pink Bi
+                Color Tourmaline Gemstone from Afghanistan.
+              </p>
+              <span><s>$700</s>$450</span>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="images/dazzling-diamond-blue-gemstones-black-background-design-202227312.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <span><s>$1000</s>$900</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="btn"
+      style="
+        margin: 14px;
+        position: absolute;
+        left: 613px;
+        background-color: rgb(255, 102, 0);
+        color: white;
+      "
+    >
+      <a href="#" class="btn">View</a>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <img
+          id="img1"
+          src="images/dazzling-diamond-blue-gemstones-black-background-design-202227312.jpg"
+        />
+      </div>
+
+      <div class="col-sm-6">
+        <h2 class="h3" style="position: absolute; margin-top: 116px">
+          FINESTONES INTRODUCTION...
+        </h2>
+        <div class="col-sm-10">
+          <p style="margin-top: 155px">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iure
+            consectetur tempora nemo eius voluptas pariatur odit fugit magni
+            reiciendis. Minus doloremque delectus fugiat, commodi cum nam
+            deserunt quos nisi? Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Molestiae, nulla dolores debitis numquam quae ea
+            inventore minus repudiandae rerum modi quo atque voluptate
+            voluptatem! Esse quod quibusdam harum voluptate incidunt. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Eligendi beatae
+            voluptatibus hic recusandae tempora molestiae cupiditate amet quasi
+            numquam, inventore delectus voluptatem tempore neque necessitatibus.
+            Provident deleniti voluptatem minima sunt.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="header" style="text-align: center">WHY SHOPE WITH US?</h2>
+        </div>
+        <div class="col-sm-4">
+          <h3 class="desc">Free Shiping</h3>
+          <p>
+            Free DHL express shiping through out the world.100% deleivery within
+            5 to 7 days.
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h3 class="desc">Free Shiping</h3>
+          <p>
+            Free DHL express shiping through out the world.100% deleivery within
+            5 to 7 days.
+          </p>
+        </div>
+       
+        <div class="col-sm-4">
+          <h3 class="desc">Free Shiping</h3>
+          <p>
+            Free DHL express shiping through out the world.100% deleivery within
+            5 to 7 days.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+      
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h2
+          class="sold"
+          style="
+            text-align: center;
+
+            margin: 87px;
+          "
+        >
+          SOLD ITEMS
+        </h2>
+      </div>
+      <div class="col-sm-3">
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="images/pngtree-shiny-diamonds-hd-poster-background-image_143755.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="images/pngtree-shiny-diamonds-hd-poster-background-image_143755.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="images/pngtree-shiny-diamonds-hd-poster-background-image_143755.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="images/pngtree-shiny-diamonds-hd-poster-background-image_143755.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div
+          class="btn"
+          style="
+            margin: 14px;
+            position: absolute;
+            left: 613px;
+            background-color: rgb(255, 102, 0);
+            color: white;
+            margin-top: 130px;
+          "
+        >
+          <a href="#" class="btn">View All</a>
+        </div>
+      </div>
+
+      <div class="col-sm-12">
+        <div class="newsletteer-section">
+          <h3
+            class="news"
+            style="position: absolute; margin-top: 289px; left: 460px"
+          >
+            SUBSCRIBE TO OUR NEWSLETTER
+            <br />
+            <div class="form-group" style="margin-top: 20px">
+              <label for="inputlg"></label>
+              <input
+                class="form-control input-lg"
+                id="inputlg"
+                type="text"
+                style="width: 100%; display: block; margin-top: 20px"
+              />
+              <button
+                class="btn btn-block"
+                style="background-color: rgb(255, 102, 0); color: white"
+              >
+                SUBSCRIBE
+              </button>
+            </div>
+          </h3>
+          <div>
+            <br />
+            <p
+              style="
+                left: 452px;
+                position: absolute;
+                display: block;
+                margin-top: 335px;
+              "
+            >
+              Enter the Email to Subscribe for our Shop Sales Announcements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="container">
+      <footer class="page-footer font-small indigo">
+        <!-- Footer Links -->
+        <div class="container" style="position: absolute; margin-top: 526px">
+          <!-- Grid row-->
+          <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="index.html">Home</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="products.html">Products</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!">Sold Items</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!">Shipping & Returns</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!">About us</a>
+              </h6>
+            </div>
+            <div class="col-md-2 mb-3">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!">Contact us</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+          <hr class="rgba-white-light" style="margin: 0 15%" />
+
+          <!-- Grid row-->
+          <div
+            class="row d-flex text-center justify-content-center mb-md-0 mb-4"
+          >
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+          <hr
+            class="clearfix d-md-none rgba-white-light"
+            style="margin: 10% 15% 5%"
+          />
+
+          <!-- Grid row-->
+          <div class="row pb-3">
+            <!-- Grid column -->
+            <div class="col-md-12">
+              <div
+                class="mb-5 flex-center"
+                style="left: 432px; position: absolute"
+              >
+                <!-- Facebook -->
+                <a class="fb-ic">
+                  <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+                </a>
+                <!-- Twitter -->
+                <a class="tw-ic">
+                  <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+                </a>
+                <!-- Google +-->
+                <a class="gplus-ic">
+                  <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
+                </a>
+                <!--Linkedin -->
+                <a class="li-ic">
+                  <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+                </a>
+                <!--Instagram-->
+                <a class="ins-ic">
+                  <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+                </a>
+                <!--Pinterest-->
+                <a class="pin-ic">
+                  <i class="fab fa-pinterest fa-lg white-text"> </i>
+                </a>
+              </div>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div
+          class="footer-copyright text-center py-3"
+          style="left: 551px; position: absolute; margin-top: 667px"
+        >
+          © 2020 Copyright:
+          <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+    <!-- Footer -->
+
+
+      </div>
+    <script src="index.js"></script>
+    <script src="img.js"></script>
+  </body>
+</html>

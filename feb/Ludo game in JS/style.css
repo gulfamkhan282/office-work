@@ -1,0 +1,85 @@
+body {
+  background-color: rgb(145, 200, 200);
+}
+#imgpl1 {
+  width: 400px;
+  margin: 34px;
+  position: absolute;
+  /* display: inline-block; */
+}
+#imgpl2 {
+  width: 400px;
+  margin: 34px;
+  position: absolute;
+  left: 900px;
+  /* display: inline-block; */
+}
+#result {
+  width: 405px;
+  position: absolute;
+  margin: 34px;
+  left: 450px;
+}
+#btn {
+  color: rgb(105, 98, 78);
+  position: absolute;
+  margin: 456px;
+  left: 192px;
+  padding: 4px;
+  font-weight: 800;
+}
+#pl1 {
+  position: absolute;
+  left: 179px;
+  margin-top: 463px;
+}
+#pl2 {
+  position: absolute;
+  right: 170px;
+  margin-top: 463px;
+}
+#playerOneButton {
+  position: absolute;
+  margin-top: 470px;
+  left: 194px;
+}
+#playerTwoButton {
+  position: absolute;
+  margin-top: 464px;
+  right: 188px;
+}
+#pll1 {
+  position: absolute;
+  left: -261px;
+  margin: 439px;
+}
+div#die1 {
+  position: absolute;
+  margin-top: 444px;
+  left: 308px;
+}
+#pll2 {
+  position: absolute;
+  right: 148px;
+  margin-top: 440px;
+}
+#die2 {
+  position: absolute;
+  right: 124px;
+  margin-top: 446px;
+}
+#displayWinner {
+  position: relative;
+  font-size: 54px;
+  left: 556px;
+  /* display: inline; */
+  color: red;
+  position: absolute;
+  margin-top: -21px;
+}
+#playerOneScore {
+  color: red;
+}
+#playerTwoScore {
+  color: red;
+}
